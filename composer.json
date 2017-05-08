@@ -1,0 +1,10 @@
+{
+    "name": "root/hackers-poulette",
+    "authors": [
+        {
+            "name": "ModjoInc",
+            "email": "habibem@gmail.com"
+        }
+    ],
+    "require": {}
+}

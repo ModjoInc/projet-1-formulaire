@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'bellotaregular';
+    src: url('Bellota-Regular-webfont.eot');
+    src: url('Bellota-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Bellota-Regular-webfont.woff') format('woff'),
+         url('Bellota-Regular-webfont.ttf') format('truetype'),
+         url('Bellota-Regular-webfont.svg#bellotaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bellotalight';
+    src: url('Bellota-Light-webfont.eot');
+    src: url('Bellota-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Bellota-Light-webfont.woff') format('woff'),
+         url('Bellota-Light-webfont.ttf') format('truetype'),
+         url('Bellota-Light-webfont.svg#bellotalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header {
+  text-align: center;
+  color: DarkSlateGray;
+  background-color: #fff;
+  background-size: cover;
+}
+
+.subheader {
+    margin: 50px 0px 20px 0px;
+}
+
+body {
+  font-family: 'bellotaregular', cursive;
+
+}
+section {
+  margin: auto;
+  padding: 5px 50px 5px 60px;
+}
+
+figure {
+  text-align: center;
+}
+
+fieldset {
+  background-color: #15c5bd;
+}
+.well {
+  background-color: #15c5bd;
+}
+.submit {
+  margin: 50px 0px 50px 0px;
+}
+#success_message {
+  display: none;
+}
+
+.FormCheck {
+  font-size: 1.5em;
+}
+.message {
+  margin: 50px 0px 50px 0px;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+figure img {
+  width: 20%;
+  height: auto;
+}
+footer {
+  margin-top: 5px;
+  background-color: #fff;
+}
