@@ -11,4 +11,4 @@
 6. Ajax (css bootstrap).
 
 #### testé pour l'envoi de l'email sur serveur 000webhost:
-accès : [](http://habibem.000webhostapp.com/ "Page Habib El Maaza Gomez")
+accès : [Page Habib El Maaza Gomez sur 000webhost](http://habibem.000webhostapp.com/)
