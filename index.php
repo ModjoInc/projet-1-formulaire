@@ -12,73 +12,10 @@
 
   <body>
 
-    <?php
-        if (isset($_POST['Submit'])) {
-
-          if ($_POST['nom'] != "") {
-            $_POST['nom'] = trim(filter_var($_POST['nom'], FILTER_SANITIZE_STRING));
-            if ($_POST['nom'] == "") {
-            $errors .= 'Entrez votre nom.<br/><br/>';
-            }
-            } else {
-            $errors .= 'Le nom est mal écrit.<br/>';
-            }
-
-          if ($_POST['prenom'] != "") {
-            $_POST['prenom'] = trim(filter_var($_POST['prenom'], FILTER_SANITIZE_STRING));
-            if ($_POST['prenom'] == "") {
-            $errors .= 'Entrez votre prénom.<br/><br/>';
-            }
-            } else {
-            $errors .= 'Le prénom est mal écrit.<br/>';
-            }
-
-          if ($_POST['problem'] != "") {
-            $_POST['problem'] = trim(filter_var($_POST['problem'], FILTER_SANITIZE_STRING));
-            if ($_POST['problem'] == "") {
-            $errors .= 'Quel est votre problème?<br/><br/>';
-            }
-            } else {
-            $errors .= 'Veuillez décrire le type de problème rencontré.<br/>';
-            }
-
-
-           if ($_POST['email'] != "") {
-           $email = trim(filter_var($_POST['email'], FILTER_SANITIZE_EMAIL));
-              if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-              $errors .= "$email n'est  <strong>pas</strong> un format valide.<br/><br/>";
-              }
-              } else {
-              $errors .= 'Veuillez écrire une adresse mail valide<br/>';
-            }
-
-         if ($_POST['message'] != "") {
-           $_POST['message'] = trim(filter_var($_POST['message'], FILTER_SANITIZE_STRING));
-         if ($_POST['message'] == "") {
-           $errors .= 'Veuillez écrire un message décrivant votre problème.<br/>';
-           }
-           } else {
-           $errors .= 'Veuillez décrire votre problème.<br/>';
-           }
-
-         if (!$errors) {
-            echo "Thank you for your email!<br/><br/>";
-            $mail_to = 'habibem@gmail.com';
-            $subject = 'Mail pour le support technique';
-            $message  = 'De: ' . $_POST['nom'] . $_POST['prenom'] . "\n";
-            $message .= 'Email: ' . $_POST['email'] . "\n";
-            $message .= 'Type de problème: ' . $_POST['problem'] . "\n";
-            $message .= "Message:\n" . $_POST['message'] . "\n\n";
-            mail($to, $subject, $message);
-            } else {
-            echo '<div style="color: red">' . $errors . '<br/></div>';
-            }
-
-        }
-    ?>
 
       <header>
         <h1>OUPS!</h1>
+        <h2>Don't Panic ;)</h2>
       </header>
 
     <section>
@@ -202,7 +139,7 @@
           <div class="form-group">
             <label class="col-md-4 control-label"></label>
               <div class="col-md-4">
-                <button type="submit" class="btn btn-warning" >Par ici la solution! <span class="glyphicon glyphicon-send"></span></button>
+                <button type="submit" name="submit" class="btn btn-warning" >Par ici la solution! <span class="glyphicon glyphicon-send"></span></button>
               </div>
           </div>
 
