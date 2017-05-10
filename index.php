@@ -8,6 +8,7 @@
       <title>Support technique HP</title>
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="style.css" rel="stylesheet">
+      <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   </head>
 
   <body>
