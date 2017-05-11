@@ -8,6 +8,7 @@
   <title>Résultats formulaire</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
  </head>
 
  </head>
@@ -72,7 +73,7 @@
                $errors .= 'Veuillez décrire votre problème.<br/>';
              }
 
-             if (!$errors) {
+             /*if (!$errors) {
                $to = $_POST["email"];
                $subject = 'Mail pour le support technique';
                $headers = 'Mime-Version: 1.0'."\r\n";
@@ -91,7 +92,7 @@
               } else {
                 echo 'erreur lors de l\'envoi';
               }
-            }
+            }*/
 
 
         echo "<br/>";
