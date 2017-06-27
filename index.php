@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
-<!--W3C VALIDATEEEEEEEED YEEEEEAH!! -->
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Support technique HP</title>
       <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="style.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
       <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   </head>
 
   <body>
 
       <header>
-        <h1>OUPS!</h1>
+        <h1>Bienvenue Ô client-sama</h1>
       </header>
 
     <section>
@@ -23,7 +22,7 @@
         <h2>Complètez ces quelques infos pour commencer</h2>
       </div>
 
-      <form class="well form-horizontal" action="form.php" method="POST" id="form_contact">
+      <form class="well form-horizontal" action="lib/form.php" method="POST" id="form_contact" data-toggle="validator">
         <fieldset>
 
           <div class="form-group">
@@ -31,7 +30,7 @@
              <div class="col-md-5 inputGroupContainer">
                <div class="input-group">
                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                 <input  name="nom" placeholder="Nom" class="form-control"  type="text">
+                 <input  name="nom" placeholder="Nom" class="form-control" type="text" required>
               </div>
             </div>
           </div>
@@ -41,7 +40,7 @@
               <div class="col-md-5 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                  <input name="prenom" placeholder="Prénom" class="form-control" type="text">
+                  <input name="prenom" placeholder="Prénom" class="form-control" type="text" required>
               </div>
             </div>
           </div>
@@ -51,7 +50,7 @@
               <div class="col-md-5 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+                  <input name="email" placeholder="E-Mail Address" class="form-control" type="text" required>
               </div>
             </div>
           </div>
@@ -124,7 +123,7 @@
               <div class="col-md-5 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                    <textarea class="form-control" name="message" placeholder="Décrivez ici votre problème">
+                    <textarea class="form-control" name="message" placeholder="Décrivez ici votre problème" required>
                     </textarea>
                 </div>
               </div>
@@ -149,7 +148,7 @@
     </section>
 
       <footer>
-        <figure><img src="hackers-poulette-logo.png" alt="logo Hackers Poulette" />
+        <figure><img src="img/hackers-poulette-logo.png" alt="logo Hackers Poulette" />
           <figcaption>Hackers Poulette since 2017</figcaption>
         </figure>
       </footer>
@@ -159,10 +158,10 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/index.js"></script>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
-      <script src="js/index.js"></script>
 
   </body>
 </html>
