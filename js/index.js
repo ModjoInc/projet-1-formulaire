@@ -73,7 +73,7 @@
             // Use Ajax to submit form data
           let serialized = $form.serialize()
           console.log(serialized);
-            $.post($form.attr(' '), serialized, function(result) {
+            $.post($form.attr('../lib/form.php'), serialized, function(result) {
                 console.log(result);
             }, 'json');
         });
